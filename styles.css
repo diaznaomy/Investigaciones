@@ -200,7 +200,7 @@ h2 {
 .contenido-libro {
     position: absolute;
     top: 60px;
-    width: 42%;
+    width: 39%;
     color: #5e4d6b;
     font-family: 'Comic Sans MS', cursive;
     font-size: 15px;
@@ -210,7 +210,7 @@ h2 {
 .contenido-libroU{
     position: absolute;
     top: 60px;
-    width: 42%;
+    width: 41%;
     color: #5e4d6b;
     font-family: 'Comic Sans MS', cursive;
     font-size: 15px;
@@ -222,12 +222,12 @@ h2 {
 }
 
 .pagina-1 {
-    left: 4.6em;
+    left: 4.8em;
     /* lado izquierdo */
 }
 
 .pagina-2 {
-    right: 4em;
+    right: 5em;
     /* lado derecho */
 }
 
