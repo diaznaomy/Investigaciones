@@ -156,7 +156,7 @@ h2 {
 /* Etiqueta grande de la página actual */
 .etiqueta-actual {
     position: absolute;
-    left: 65em;
+    left: 67em;
     /* ajusta según el borde derecho del libro */
     top: 180px;
     /* ajústalo para centrarlo con el texto del libro */
@@ -222,12 +222,12 @@ h2 {
 }
 
 .pagina-1 {
-    left: 70px;
+    left: 4.6em;
     /* lado izquierdo */
 }
 
 .pagina-2 {
-    right: 60px;
+    right: 4em;
     /* lado derecho */
 }
 
