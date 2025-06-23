@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'SourGummy';
+    src: url(./fonts/SourGummy.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: url(./fonts/Shrikhand-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4d8d7;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+header {
+    background-color: #ccb6cf;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    font-family: 'SourGummy', sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Shrikhand-Regular', sans-serif;
+}
+
+.header-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: 800;
+    margin-top: 15px;
+}
+
+.highlight {
+    background-color: #7e255f;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.header-text {
+    max-width: 55%;
+}
+
+.header-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.students {
+    margin-top: 5px;
+}
+
+.students h2 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+.students a {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-family: 'sourGummy', sans-serif;
+}
+
+.closed-book img {
+    width: 428px;
+    height: auto;
+    display: block;
+    justify-self: center;
+}
+
+/* NUEVO contenedor de todo */
+.pagina {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 0;
+    /* Para que queden pegaditas */
+    position: relative;
+}
+
+/* Tamaño del libro */
+.book img {
+    width: 800px;
+    height: auto;
+    display: block;
+}
+
+/* Columna de íconos */
+.etiquetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -60px;
+    /* PEGA las etiquetas al libro */
+    margin-top: 300px;
+    /* Alinea con el contenido interno */
+}
+
+/* Tooltip container */
+.tooltip-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tooltip-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Íconos */
+.icon {
+    width: 52px;
+    height: auto;
+    cursor: pointer;
+}
+
+.tooltip {
+    margin-left: 8px;
+    background-color: #7e255f;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiqueta grande de la página actual */
+.etiqueta-actual {
+    position: absolute;
+    left: 1000px;
+    /* ajusta según el borde derecho del libro */
+    top: 180px;
+    /* ajústalo para centrarlo con el texto del libro */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    z-index: 20;
+    transform: scale(1.4);
+    /* hacerla un poco más grande */
+}
+
+
+/* Imagen de la etiqueta */
+.etiqueta-actual img {
+    width: 100px;
+    height: auto;
+}
+
+.pagina-libro {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pagina-libro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-fondo-libro {
+    width: 100%;
+    max-width: 1500px;
+    max-height: 2000px;
+    display: block;
+    margin: auto;
+}
+
+.contenido-libro {
+    position: absolute;
+    top: 60px;
+    width: 42%;
+    color: #5e4d6b;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contenido-libroU{
+    position: absolute;
+    top: 60px;
+    width: 42%;
+    color: #5e4d6b;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contenido-libroU ul li{
+    font-size: 13.5px;
+}
+
+.pagina-1 {
+    left: 70px;
+    /* lado izquierdo */
+}
+
+.pagina-2 {
+    right: 60px;
+    /* lado derecho */
+}
+
+.ejemplos {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.ejemplos h2 {
+    color: #7e255f;
+}
+
+.grid-ejemplos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #fed6e4;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.item :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.referencias {
+    background-color: #e7b3b5;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.referencias a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7e255f;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #9eacde;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 97%;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0.5;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
